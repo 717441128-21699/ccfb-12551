@@ -1,0 +1,22 @@
+{
+  "name": "green-slope-viewer",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "test": "node --test tests/slope.test.ts tests/delaunay.test.ts tests/friction.test.ts tests/roll.test.ts tests/aim.test.ts tests/edge.test.ts tests/perf.test.ts",
+    "gen-samples": "node scripts/gen-samples.ts"
+  },
+  "dependencies": {
+    "three": "^0.180.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "@types/three": "^0.180.0",
+    "typescript": "^5.8.0",
+    "vite": "^6.3.0"
+  }
+}
